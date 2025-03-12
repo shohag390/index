@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>grocerys</title>
+    <link rel="shortcut icon" href="./image/bg.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/9753b0a825.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="">
+<body class="font-[cursive]">
     <!-- Header Section -->
     <header class="">
         <nav class="h-[10vh] px-[100px] w-full bg-[green] flex items-center justify-between text-[#fff]">
-            <h4 class="font-bold text-[20px]">Logo</h4>
+            <div class="flex items-center gap-[8px] text-[18px]">
+                <img class="h-[40px]" src="./image/bg.png" alt="">
+                <h4 class="uppercase text-[#fff]">grocerys</h4>
+            </div>
             <ul class="flex items-center gap-[30px]">
                 <li>
                     <a href="#">
@@ -43,16 +47,41 @@
                 </li>
             </ul>
         </nav>
+
+
+        <section class="h-[90vh] w-full flex items-center justify-between px-[100px]">
+            <div class="w-1/2">
+                <h4 class="font-bold uppercase text-[30px] text-[green]">This Is grocery Website.
+                    You <br> Can Buy
+                    grocery
+                    Item.
+                </h4>
+                <p class="pt-[10px] text-[#6e6d6d] pb-[30px]">In the context of a grocery store in Paurashava, Kushtia,
+                    "grocery
+                    oil"
+                    typically
+                    refers to edible
+                    oils like soybean, sunflower, mustard, and other vegetable oils, used for cooking and frying, often
+                    sold in plastic or metal bottles</p>
+                <button class="py-[8px] px-[30px] bg-[green] text-[#fff] rounded-md">Learn More</button>
+            </div>
+            <div class="">
+                <img src="./image/bg.png" alt="">
+            </div>
+        </section>
+
     </header>
 
-    <section class="px-[100px] py-[20px]">
-        <h1 class="font-bold text-[30px] text-red-500 uppercase pb-[10px]">Card Contanear</h1>
-        <div id="cardContanear" class="grid grid-cols-4 gap-[20px]">
-        </div>
-    </section>
+    <main>
+        <section class="px-[100px] pt-[25px] pb-[40px] bg-[#e1ffe1]">
+            <h1 class="font-bold text-[25px] text-[green] uppercase pb-[10px]">Card Contanear</h1>
+            <div id="cardContanear" class="grid grid-cols-4 gap-[20px]">
+            </div>
+        </section>
 
+    </main>
 
-    <footer class="h-[200px] w-[100%] bg-[green] text-center flex items-center justify-center mt-[15px]">
+    <footer class="h-[200px] w-[100%] bg-[green] text-center flex items-center justify-center">
         <p class="text-[#fff]">Copyright &copy; 2025 by Md Shohag Ali . All Rights Reserved.</p>
     </footer>
 

@@ -13,6 +13,7 @@ const showItem = (items) => {
         card.classList = "p-[20px] text-[gray] rounded-md card";
         cardContanear.appendChild(card)
         const userId = document.createElement("p");
+        userId.classList = "text-[green] font-bold text-center bg-[#fff] h-[40px] w-[40px] rounded-full flex justify-center items-center mb-[10px]"
         userId.innerText = item.id;
         card.appendChild(userId);
         const cardname = document.createElement("h4");
