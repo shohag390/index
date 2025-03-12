@@ -1,28 +1,26 @@
 const cardContanear = document.getElementById("cardContanear");
 
-fetch("https://jsonplaceholder.typicode.com/todos")
+fetch("https://dummyjson.com/products")
     .then(res => res.json())
     .then(data => {
-        showItem(data)
+        showItem(data.products)
     })
 
 
 const showItem = (items) => {
     for (const item of items) {
+        console.log(item);
+
         const card = document.createElement("div");
         card.classList = "p-[20px] text-[gray] rounded-md card";
         cardContanear.appendChild(card)
-        const userId = document.createElement("p");
-        userId.classList = "text-[green] font-bold text-center bg-[#fff] h-[40px] w-[40px] rounded-full flex justify-center items-center mb-[10px]"
-        userId.innerText = item.id;
-        card.appendChild(userId);
-        const cardname = document.createElement("h4");
-        cardname.classList = "line-clamp-1";
-        card.appendChild(cardname);
-        cardname.innerText = item.title;
-        const button = document.createElement("button")
-        button.innerText = "More Details";
-        button.classList = "py-[7px] px-[20px] border rounded-md mt-[20px] bg-[green] text-[white]";
-        card.appendChild(button);
+        card.innerHTML = `
+        <img class="h-[200px]" src=${item?.thumbnail} alt="">
+        <h4 class="line-clamp-1">${item?.title}</h4>
+        <p>$${item?.price}</p>
+        
+        `
+
+
     }
 }
