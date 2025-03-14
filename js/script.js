@@ -18,9 +18,5 @@ const showItem = (items) => {
         <img class="h-[200px]" src=${item?.thumbnail} alt="">
         <h4 class="line-clamp-1">${item?.title}</h4>
         <p>$${item?.price}</p>
-        
-        `
-
-
-    }
+         `}
 }
